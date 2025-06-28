@@ -4,15 +4,12 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-
     <title>dotSlashApps</title>
     <meta name="title" content="dotSlashApps"/>
     <meta name="description" content="dotSlashApps, an independent developer from Italy."/>
-
     <link rel="stylesheet" href="/assets/css/main.css"/>
     <link rel="canonical" href="/"/>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-
     <style>
       /* Grayed out style for built apps */
       .built {
@@ -20,17 +17,19 @@
         opacity: 0.5;
         pointer-events: none; /* Optional: disables clicking on the links */
       }
+      
+      /* Active app styling - normal appearance but not grayed out */
+      .active {
+        /* No special styling - just remains at normal opacity and color */
+      }
     </style>
   </head>
-
   <body>
     <header class="site-header">
       <div class="wrapper">
         <h1 class="site-title">dotSlashApps</h1>
-
         <nav class="site-nav">
           <a href="#" class="menu-icon"></a>
-
           <div class="menu">
             <a class="page-link" href="/">Home</a>
             <a class="page-link" href="/apps">Apps</a>
@@ -39,14 +38,28 @@
         </nav>
       </div>
     </header>
-
     <div class="page-content">
       <div class="wrapper">
         <div class="work">
-          <p>This is a list of apps that I’ve created.
+          <p>This is a list of apps that I've created.
             <br /><br />
           </p>
-
+          
+          <!-- AirLens - Active App -->
+          <div class="work-item active">
+            <div class="work-bubble">
+              <a href="https://apps.apple.com/it/app/airlens/id6743875293">
+                <img src="/assets/img/apps/airlens.png" alt="AirLens" />
+              </a>
+            </div>
+            <span class="work-text">
+              <strong>AirLens</strong>
+              &mdash;
+              Transform your iPhone into a wireless camera for streaming and recording. Capture high-quality video wirelessly and stream directly to your devices with professional-grade features.
+            </span>
+          </div>
+          
+          <!-- Stream to Kodi - Built App -->
           <div class="work-item built">
             <div class="work-bubble">
               <a href="https://apps.apple.com/us/app/stream-to-kodi/id1217123212?itsct=apps_box&itscg=30200">
@@ -59,7 +72,8 @@
               An iOS application to stream videos and pictures to a Kodi mediacenter, made mostly to be able to stream youtube videos on a big TV, videos should play without ads. 
             </span>
           </div>
-
+          
+          <!-- Vertical - Built App -->
           <div class="work-item built">
             <div class="work-bubble">
               <a href="https://apps.apple.com/us/app/vertical-track-your-altitude/id1531935610?itsct=apps_box&itscg=30200">
@@ -72,17 +86,14 @@
               A simple iOS application to display your current altitude and track the elevation gains when hiking around.
             </span>
           </div>
-
         </div>
       </div>
     </div>
-
     <footer class="site-footer">
       <div class="wrapper">
         <div class="footer-col-wrapper">
           <div class="footer-col footer-col-1">
             <h4>CONTACT</h4>
-
             <div class="social-links">
               <div class="social-link contact-links">
                 <img src="/assets/img/icons/email.png" alt="email" />
@@ -95,7 +106,6 @@
         </div>
       </div>
     </footer>
-
     <script type="text/javascript" src="/assets/js/vendor/cash-4.1.5.min.js"></script>
     <script type="text/javascript" src="/assets/js/site.js"></script>
   </body>
