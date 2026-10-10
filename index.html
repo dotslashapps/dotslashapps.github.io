@@ -1,122 +1,126 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-
-  <title>dotSlashApps</title>
-  <meta name="title" content="dotSlashApps"/>
-  <meta name="description" content="dotSlashApps, an independent developer from Italy.">
-
-  <link rel="stylesheet" href="/assets/css/main.css"/>
-  <link rel="canonical" href="/"/>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-
-
-</head>
-
-
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>dotSlashApps</title>
+    <meta name="title" content="dotSlashApps"/>
+    <meta name="description" content="dotSlashApps, an independent developer from Italy."/>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <link rel="canonical" href="/"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <style>
+      /* Grayed out style for built apps */
+      .built {
+        filter: grayscale(100%);
+        opacity: 0.5;
+        pointer-events: none; /* Optional: disables clicking on the links */
+      }
+      
+      /* Active app styling - normal appearance but not grayed out */
+      .active {
+        /* No special styling - just remains at normal opacity and color */
+      }
+    </style>
+  </head>
   <body>
     <header class="site-header">
-  <div class="wrapper">
-	  <h1 class="site-title">dotSlashApps</h1>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon"></a>
-
-      <div class="menu">
-        
-          
-          
-          <a class="page-link" href="/">
-            Home
-          </a>
-        
-          
-          
-          <a class="page-link" href="/apps">
-            Apps
-          </a>
-        
-        
-
-	  <a class="page-link" href="/privacy">
-            Privacy
-	  </a>
-       
+      <div class="wrapper">
+        <h1 class="site-title">dotSlashApps</h1>
+        <nav class="site-nav">
+          <a href="#" class="menu-icon"></a>
+          <div class="menu">
+            <a class="page-link" href="/">Home</a>
+            <a class="page-link" href="/apps">Apps</a>
+            <a class="page-link" href="/privacy">Privacy</a>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</header>
-
-
+    </header>
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
-          <img
-            src="/assets/img/home.png"
-            alt="website picture"
-            class="home-pic"
-          />
+        <div class="work">
+          <p>This is a list of apps that I've created.
+            <br /><br />
+          </p>
 
-	  <p>
-	  Hello!
-	  </p>
-
-          <p>
-	  I’m an independent developer from Italy who writes software in my spare time.
-	  </p>
-	  <p>
-          When developing, I focus on ease of use and apply minimalist design principles.
-	  </p>
-	  <p>
-          If you’d like to report a bug or have any general inquiries, my contact information is available at the bottom of the page.<br>
-	  </p>
-
+          <!-- Ormeo - Active App -->
+          <div class="work-item active">
+            <div class="work-bubble">
+              <a href="https://apps.apple.com/it/app/ormeo/id6808748415">
+                <img src="/assets/img/apps/ormeo.png" alt="Ormeo" />
+              </a>
+            </div>
+            <span class="work-text">
+              <strong>Ormeo</strong>
+              &mdash;
+              Discover and track your outdoor adventures. Explore new places, record your journeys, and keep your favorite experiences in one place.
+            </span>
+          </div>
+          
+          <!-- AirLens - Active App -->
+          <div class="work-item active">
+            <div class="work-bubble">
+              <a href="https://apps.apple.com/it/app/airlens/id6743875293">
+                <img src="/assets/img/apps/airlens.png" alt="AirLens" />
+              </a>
+            </div>
+            <span class="work-text">
+              <strong>AirLens</strong>
+              &mdash;
+              Transform your iPhone into a wireless camera for streaming and recording. Capture high-quality video wirelessly and stream directly to your devices with professional-grade features.
+            </span>
+          </div>
+          
+          <!-- Stream to Kodi - Built App -->
+          <div class="work-item built">
+            <div class="work-bubble">
+              <a href="https://apps.apple.com/us/app/stream-to-kodi/id1217123212?itsct=apps_box&itscg=30200">
+                <img src="/assets/img/apps/streamtokodi.png" alt="stream to kodi" />
+              </a>
+            </div>
+            <span class="work-text">
+              <strong>Stream to Kodi</strong>
+              &mdash;
+              An iOS application to stream videos and pictures to a Kodi mediacenter, made mostly to be able to stream youtube videos on a big TV, videos should play without ads. 
+            </span>
+          </div>
+          
+          <!-- Vertical - Built App -->
+          <div class="work-item built">
+            <div class="work-bubble">
+              <a href="https://apps.apple.com/us/app/vertical-track-your-altitude/id1531935610?itsct=apps_box&itscg=30200">
+                <img src="/assets/img/apps/vertical.png" alt="vertical" />
+              </a>
+            </div>
+            <span class="work-text">
+              <strong>Vertical</strong>
+              &mdash;
+              A simple iOS application to display your current altitude and track the elevation gains when hiking around.
+            </span>
+          </div>
         </div>
       </div>
     </div>
-
     <footer class="site-footer">
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-	    <div class="footer-col footer-col-1">
-        <h4>CONTACT</h4>
-
-        <div class="social-links">
-
-            <div class="social-link contact-links">
-
-
-              <img
-                src="/assets/img/icons/email.png"
-                alt="email"
-              />
-              <a href="mailto:hello@dotslashapps.com" id="email-link">
-
+      <div class="wrapper">
+        <div class="footer-col-wrapper">
+          <div class="footer-col footer-col-1">
+            <h4>CONTACT</h4>
+            <div class="social-links">
+              <div class="social-link contact-links">
+                <img src="/assets/img/icons/email.png" alt="email" />
+                <a href="mailto:hello@dotslashapps.com" id="email-link">
                   hello@dotslashapps.com
-
-              </a>
+                </a>
+              </div>
             </div>
-
-
+          </div>
         </div>
       </div>
-    	    </div>
-  </div>
-</footer>
-
-
-  
-
-
-
-
-
-
+    </footer>
     <script type="text/javascript" src="/assets/js/vendor/cash-4.1.5.min.js"></script>
-<script type="text/javascript" src="/assets/js/site.js"></script>
-
+    <script type="text/javascript" src="/assets/js/site.js"></script>
   </body>
 </html>
